@@ -34,34 +34,26 @@ class AboutTuples(Koan):
         list_count.append("boom")
         count_of_three = tuple(list_count)
 
-<<<<<<< HEAD
         self.assertEqual((1, 2, 5, "boom"), count_of_three)
-=======
+
         self.assertEqual((1, 2, 5, 'boom'), count_of_three)
->>>>>>> 15badf5f7a0ec08c1851360bef1a01ac5ec19306
 
     def test_tuples_of_one_look_peculiar(self):
         self.assertEqual(int, (1).__class__)
         self.assertEqual(tuple, (1,).__class__)
-<<<<<<< HEAD
         self.assertEqual((5,).__class__, ("I'm a tuple",).__class__)
         self.assertEqual('str'.__class__, ("Not a tuple").__class__)
-=======
         self.assertEqual(tuple, ("I'm a tuple",).__class__)
         self.assertEqual(str, ("Not a tuple").__class__)
->>>>>>> 15badf5f7a0ec08c1851360bef1a01ac5ec19306
 
     def test_tuple_constructor_can_be_surprising(self):
         self.assertEqual(('S','u','r','p','r','i','s','e','!'), tuple("Surprise!"))
 
     def test_creating_empty_tuples(self):
-<<<<<<< HEAD
         self.assertEqual(() , ())
         self.assertEqual(tuple() , tuple()) #Sometimes less confusing
-=======
         self.assertEqual((), ())
         self.assertEqual(() , tuple()) #Sometimes less confusing
->>>>>>> 15badf5f7a0ec08c1851360bef1a01ac5ec19306
 
     def test_tuples_can_be_embedded(self):
         lat = (37, 14, 6, 'N')
